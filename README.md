@@ -14,6 +14,8 @@ contributor), and paper proofs of steps not yet formalized.
   `Classical.choice`, `Quot.sound`.
 - `proofs/`: paper proofs.
 
+The [structural lemma graph](structural_lemmas/README.md) gives mathematical statements, proof sketches, finite certificates and open targets connecting the fleet's results to other research.
+
 ## Credit and licence
 
 The lemma statements, and the definitions they use, are the fleet's: they come from
