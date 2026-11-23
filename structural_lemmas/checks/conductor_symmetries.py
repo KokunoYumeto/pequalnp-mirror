@@ -1,5 +1,5 @@
 """Reproduce the torsion actions and rational functions of the three-cusp model."""
-from sympy import I, Matrix, Rational, cancel, eye, symbols, zeros
+from sympy import I, Matrix, Rational, cancel, diag, eye, symbols, zeros
 
 
 def binary(matrix):
@@ -98,3 +98,30 @@ for p in (5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43):
     count_normalized(p)
 print("Genus-three traces versus elliptic traces, at 11 and 13:",
       {p: count_normalized(p) for p in (11, 13)})
+
+# The original threefold's local conductor periods. The matrix changes basis
+# from the local integral columns (a,b,c,d) to the real basis (e0,e1,e2,e3).
+h = symbols("h", positive=True)
+local_bases = [
+    Matrix([[0,-1,0,0],[-1,0,-2,-1],[0,0,0,1],[0,0,1,0]]),
+    Matrix([[0,0,0,1],[0,-1,0,0],[-1,0,-2,-1],[0,0,1,0]]),
+    Matrix([[0,0,0,1],[1,-1,2,-2],[0,1,0,1],[0,0,-1,0]]),
+]
+period_basis = Matrix([[1,1,1,2],[1,0,0,0],[0,1,0,0],[0,0,1,0]])/2
+e0, e1, e2, e3 = [eye(4).col(j) for j in range(4)]
+def twistor(q):
+    return Matrix([[1,I,-q,I*q],[q,-I*q,1,I]])
+planes = [Matrix([[0,0,-1,I],[1,-I,0,0]]), twistor(I), twistor(-1)]
+reference = [
+    (-e0, -(e0+e1)/2, -h**2*e2/4, e1),
+    (-e0, -e0/2-h**2*e2/8, -h*e3/2, e2),
+    (e0, -h**2*e2/8+h*e3/4, h**2*e2/4, e3),
+]
+for change, plane, (period, b, c, direction) in zip(local_bases, planes, reference):
+    marked = diag(1,1,h**2/4,h/2)*period_basis*change
+    assert (2*marked.col(0)-marked.col(2), marked.col(1), marked.col(2)) == (period,b,c)
+    def area(vector):
+        return Matrix.hstack(plane*vector, plane*c).det()
+    assert area(e0) != 0 and cancel(area(direction)/area(e0)) == -I
+assert 256*(36-3)**3//(36-4) == 287496
+print("Conductor limiting period ratios all -i; discriminant -16 gives j=287496.")

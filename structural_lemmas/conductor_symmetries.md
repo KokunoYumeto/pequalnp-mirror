@@ -45,7 +45,68 @@ This directed graph has only the identity automorphism. In particular every auto
 
 The two conductor images in a singular fibre have another geometric meaning. In the root compactification the cyclic quotient exchanges the two components and preserves both node parities. Its two sections give separate copies of the isogeny $E/\langle1/2\rangle\to E/\langle1/4\rangle$. There is nevertheless a genuine simultaneous swap: translation by the global flat half-period $e_1/2$ preserves each image over $\infty$ and exchanges the pair over both $0$ and $1$. In the three local bases its doubled period has last coordinate $0,1,1$. A translation with last coordinate $d$ multiplies the local multiplicative coordinate by $r^d$ times a holomorphic unit. It therefore carries the chain chart indexed by $k$ isomorphically to that indexed by $k+d$, including the central fibre. Odd $d$ reverses node parity. The global monodromy fixes this translation, and the local and global translations agree on their overlap. This exhibits one of the double transpositions on the conductor curves themselves. [Integral calculations](checks/conductor_symmetries.py)
 
-## What adding a lambency-six marking does
+## The actual conductor moduli
+
+Before introducing another elliptic family one can compute what happens to the **actual conductor images**. Let $\epsilon>0$ be the small deformation parameter of P205, and fix one of its holomorphic equivariant trivializations specializing to the prescribed basis at $\epsilon=0$. In the following table the $e_0,e_1,e_2,e_3$ are the real period basis of P205. In each local integral basis $(a,b,c,d)$ set $p=2a-c$. Multiplying the three changes of basis by the displayed real lattice matrix $D_\epsilon P$ gives
+
+| Exceptional value | $p$ | $b$ | Direction of $c$ |
+|---|---|---|---|
+| $\infty$ | $-e_0$ | $-(e_0+e_1)/2$ | $e_2$ |
+| $0$ | $-e_0$ | $-e_0/2-\epsilon^2e_2/8$ | $e_3$ |
+| $1$ | $e_0$ | $\epsilon e_3/4-\epsilon^2e_2/8$ | $e_2$ |
+
+Let $\Pi_i$ be a local two-row frame for the canonical period plane at the marked lift. Define $R_i(v)=\det(\Pi_i v,\Pi_i c')/\det(\Pi_i e_0,\Pi_i c')$, where $c'$ is the direction in the last column. Dividing by the scale of $c$ before taking the limit avoids a singular normalization. The logarithmic period correction kills $p,b,c$. The actual period ratio $\tau_i$ of the elliptic base in the root chart is $R_i(b)/R_i(p)$, with the lower-half-plane convention of P205. The limiting twistor parameters are $\infty,i,-1$. Substitution in the printed two-row frames gives $R_1(e_1),R_2(e_2),R_3(e_3)\to-i$, with respective limiting denominators $1,2i,2$. Holomorphic dependence then gives
+
+$$
+\tau_1=\tfrac12(1-i)+O(\epsilon),\quad
+\tau_2=\tfrac12-i\epsilon^2/8+O(\epsilon^3),\quad
+\tau_3=-i\epsilon/4+O(\epsilon^2).
+$$
+
+Each of the two conductor sections is the quotient by $1/2$, and each conductor image is the quotient by $1/4$. Their upper-half-plane period ratios can be taken as $-2\tau_i$ and $-4\tau_i$. At $\infty$ the **section** therefore tends to $j(i)=1728$ and the **image** tends to $j(2i)=287496$. For the second value, multiplication by $i$ exchanges two of the three order-two subgroups of $y^2=x^3-x$. Quotienting a square lattice by a half of one of its two coordinate periods gives the rectangular period $2i$ up to a change of basis. In the cubic this corresponds to the roots $1,-1$. Translation of the root $1$ to zero gives coefficients $a=3,b=2$ in $y^2=x^3+ax^2+bx$. Its 2-isogenous curve has $a=-6,b=1$ and hence $j=256(a^2-3b)^3/(b^2(a^2-4b))=287496$.
+
+Write $J_2,J_3$ for the ordinary image invariants at $0,1$ in the same threefold. Translating by an integer and inverting the arguments brings both to the cusp at infinity. From $j(q)=q^{-1}+744+O(q)$ one obtains
+
+$$
+\log|J_2|\sim 4\pi/\epsilon^2,\qquad
+\log|J_3|\sim 2\pi/\epsilon .
+$$
+
+Thus all three pairs of image curves have distinct moduli for sufficiently small positive $\epsilon$. Each pair over a *single* base value still consists of isomorphic curves. The square-lattice limit belongs to the sections of the first singular surface and makes a geometric appearance of 1728 in the threefold construction itself. [Period and basis calculations](checks/conductor_symmetries.py)
+
+For every fixed degree bound $D$, curves from different exceptional fibres also admit no isogeny of degree at most $D$ for sufficiently small $\epsilon$. A bounded-degree isogeny has only finitely many sublattice types. A period in a compact part of the moduli space has images in a compact part. For periods high in the standard cusp, a degree-$n$ image has an upper-triangular representative $(a\tau+b)/d$ with $ad=n$. The ratio of the two heights then lies between $1/n$ and $n$. The two divergent heights above have unbounded ratio. For a fixed holomorphic family as above, the modular equations are analytic on the positive interval, and none can vanish identically. Outside a countable exceptional set of parameters the conductor images from different fibres are therefore pairwise nonisogenous.
+
+### An exact deformation with different isogeny patterns
+
+The construction permits a choice of global equivariant frame for the period bundle. One such choice turns the three leading terms into exact periods. The trivial-character covector can be taken to be the flat $e_0^*$. Let $\sigma_i$ be the generator for the nontrivial character fixed by the $i$th inertia involution. It annihilates the flat vector $e_0$: evaluation gives a holomorphic function on the compact $z$-sphere with nontrivial character, hence zero. At the corresponding marked lift put
+
+$$
+h_1=e_1,\qquad h_2=e_2,\qquad h_3=e_3-\epsilon e_2/2 .
+$$
+
+These vectors lie in the positive eigenspaces of the respective finite parts; at $\epsilon=0$ the chosen $\sigma_i$ evaluates to one on $h_i$. Rescale each $\sigma_i$ by the reciprocal of this value at its own marked point, a nowhere-zero holomorphic function of $\epsilon$ on a sufficiently small disc. The other two nontrivial characters vanish on this positive eigenspace. In the normalized character frame the positive twistor row restricts there to $e_0^*-i\sigma_i$. The three ratios $R_i(h_i)$ are now exactly $-i$. This rescaling preserves the specialization that the existence and transversality proof uses. In this particular admissible family the two image curves at each cusp have, up to integral changes of period basis, the following **exact** upper-half-plane periods:
+
+$$
+\rho_\infty=2i,\qquad \rho_0=i\epsilon^2/2,\qquad \rho_1=i\epsilon .
+$$
+
+This gives an if-and-only-if test on the curves themselves. Two rectangular periods $iu,iv$, $u,v>0$, are isogenous over $\mathbb C$ precisely when $v/u$ or $uv$ is rational. Indeed a rational matrix of positive determinant carrying $iu$ to $iv$ must satisfy $b=-cuv$ and $a=dv/u$. At least one of $c,d$ is nonzero. Conversely a positive rational ratio gives a diagonal matrix and a positive rational product gives an off-diagonal matrix. Applying the criterion to all three pairs gives
+
+| Exceptional values compared | Their elliptic images are isogenous exactly when |
+|---|---|
+| $\infty,0$ | $\epsilon^2\in\mathbb Q$ |
+| $\infty,1$ | $\epsilon\in\mathbb Q$ |
+| $0,1$ | $\epsilon^3\in\mathbb Q$ |
+
+For a sufficiently large prime $n$, choosing $\epsilon=1/n$ puts all three pairs of images in the isogeny class of the square lattice. Choosing $1/\sqrt n$ joins just the images over $\infty,0$, and choosing $1/\sqrt[3]n$ joins just those over $0,1$. For a positive transcendental $\epsilon$ small enough for the construction, no two distinct exceptional values have isogenous images. The monodromy matrices in the integral basis are identical in all four examples. The three-pair permutation data alone therefore cannot recover these isogenies.
+
+The exact classification belongs to the specified family. Multiplying each normalized $\sigma_i$ by an independent holomorphic unit with value one at zero changes the higher-order period terms. The displayed leading limits and growth rates continue to hold for those choices.
+
+![The three conductor image periods and four isogeny patterns in the normalized family](period_isogenies.png)
+
+[Reproduce the isogeny table](checks/period_isogenies.py)
+
+## An auxiliary modular family on the same base
 
 Give the same punctured base its auxiliary Legendre curve $y^2=s(s-1)(s-t)$. This is a choice of elliptic family on the base. The period construction of P205 supplies a family of two-dimensional tori. An identification of the auxiliary Legendre curve with a conductor elliptic curve would require another geometric map.
 
@@ -96,6 +157,6 @@ $$
 
 For example $a_{11}=4$ gives eight points, and $a_{13}=-2$ gives twenty. The checker counts on the normalized cover with the additional coordinate $y_3^2=f_3$ and the relation $y_1y_2=(u+3)(u-1)y_3$. This retains the two branches over a common zero of $f_1$ and $f_2$. It adds the two rational points over infinity. [Point-count replay](checks/conductor_symmetries.py)
 
-One can now test a stronger symmetry claim. The common elliptic invariant is $35152/9$. Since a complex multiplication invariant is an algebraic integer, the elliptic factors have no complex multiplication. Hence $\operatorname{End}^0(\operatorname{Jac}(Y)_{\mathbb C})=M_3(\mathbb Q)$. A rational matrix of order seven would require the cyclotomic polynomial $\Phi_7$ of degree six in its minimal polynomial. Thus the full group $\mathrm{GL}_3(2)$, which contains elements of order seven, cannot act faithfully on this Jacobian by origin-preserving automorphisms, even up to isogeny. The smaller four-group does give the three quotient curves and the trace formula above. [Complex multiplication, Milne, *Modular Functions and Modular Forms*](https://www.jmilne.org/math/CourseNotes/MF.pdf)
+One can now test a stronger symmetry claim. The common elliptic invariant is $35152/9$. Since a complex multiplication invariant is an algebraic integer, the elliptic factors have no complex multiplication. Hence $\operatorname{End}^0(\operatorname{Jac}(Y)_{\mathbb C})=M_3(\mathbb Q)$. A rational matrix of order seven would require the cyclotomic polynomial $\Phi_7$ of degree six in its minimal polynomial. Thus the full group $\mathrm{GL}_3(2)$, which contains elements of order seven, cannot act faithfully on this Jacobian by origin-preserving automorphisms, even up to isogeny. The smaller four-group does give the three quotient curves and the trace formula above. The conductor period limits also rule out any bounded-degree identification with $E_+$ near $\epsilon=0$: two invariants escape every compact set, and the other tends to a CM value, whereas every isogenous curve to $E_+$ is non-CM. At fixed degree the isogeny orbit of $E_+$ is finite. [Complex multiplication, Milne, *Modular Functions and Modular Forms*](https://www.jmilne.org/math/CourseNotes/MF.pdf)
 
 The geometric example and its period matrices come from the AI-produced six-sphere Paper II, Example P205. The point/line comparison comes from the GRH research manuscript, CX-GEO-005. The comparisons of these sources, the modular base change, and the finite calculations in this chapter are AI-produced by OpenAI Codex.

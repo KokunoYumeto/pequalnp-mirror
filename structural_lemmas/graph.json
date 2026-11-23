@@ -402,6 +402,34 @@
       ]
     },
     {
+      "id": "conductor-periods",
+      "chapter": "conductor_symmetries.md",
+      "status": "paper and finite check",
+      "statement": "The first pair of sections tends to the square elliptic curve. Its images tend to discriminant minus sixteen. The other conductor image heights diverge at distinct rates.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "cusp-obstruction"
+        },
+        {
+          "type": "compares",
+          "target": "three-quotients"
+        }
+      ]
+    },
+    {
+      "id": "conductor-isogenies",
+      "chapter": "conductor_symmetries.md",
+      "status": "paper for a specified holomorphic normalization",
+      "statement": "With the same integral monodromy the three conductor image periods can be taken as 2i, iε²/2 and iε. Their pairwise isogenies are characterized by rationality of ε², ε and ε³ respectively.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "conductor-periods"
+        }
+      ]
+    },
+    {
       "id": "joint-level-six",
       "chapter": "marked_primes.md",
       "status": "paper and finite check",
