@@ -1,0 +1,332 @@
+{
+  "nodes": [
+    {
+      "id": "tetracode",
+      "chapter": "pappus_and_lattice.md",
+      "status": "paper and finite check",
+      "statement": "Four ternary coordinate fibres give the affine plane of order three. Deleting one direction recovers all 27 labelled Pappus edges.",
+      "relations": []
+    },
+    {
+      "id": "line-outputs",
+      "chapter": "pappus_and_lattice.md",
+      "status": "upstream proof",
+      "statement": "The nine line disjunctions cost 18 gates in the one-free-NOT model.",
+      "relations": [
+        {
+          "type": "identifies-instance",
+          "target": "tetracode"
+        },
+        {
+          "type": "upstream",
+          "target": "L-meta-907"
+        }
+      ]
+    },
+    {
+      "id": "selected-edge",
+      "chapter": "pappus_and_lattice.md",
+      "status": "open",
+      "statement": "Can one selected-edge output be realized with eight AND gates and free OR gates on 18 independent inputs?",
+      "relations": [
+        {
+          "type": "identifies-instance",
+          "target": "tetracode"
+        },
+        {
+          "type": "upstream-question",
+          "target": "L-meta-458"
+        }
+      ]
+    },
+    {
+      "id": "cm-directions",
+      "chapter": "pappus_and_lattice.md",
+      "status": "paper and finite check",
+      "statement": "Gaussian and Eisenstein multiplication have cycle types 2+2 and 1+3 on the four deletion directions.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "tetracode"
+        }
+      ]
+    },
+    {
+      "id": "octad-group",
+      "chapter": "pappus_and_lattice.md",
+      "status": "paper and finite check",
+      "statement": "Two marked Klein groups lie in a common group of order 48. One translation direction has trace −8 and four have trace zero.",
+      "relations": []
+    },
+    {
+      "id": "octad-cubic",
+      "chapter": "pappus_and_lattice.md",
+      "status": "finite check",
+      "statement": "The marked Albert cubic has stabilizer of order four and an orbit of twelve in the octad group.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "octad-group"
+        }
+      ]
+    },
+    {
+      "id": "common-eighteen",
+      "chapter": "pappus_and_lattice.md",
+      "status": "paper",
+      "statement": "The common 18-dimensional rational summand needs at least 24 points in a permutation realization.",
+      "relations": [
+        {
+          "type": "compares",
+          "target": "octad-group"
+        }
+      ]
+    },
+    {
+      "id": "es-trace",
+      "chapter": "es_jordan.md",
+      "status": "paper",
+      "statement": "The marked octad traces give the cubic for the Erdős–Straus denominators. The octonion cubic varies within a single trace fibre.",
+      "relations": [
+        {
+          "type": "compares",
+          "target": "octad-cubic"
+        }
+      ]
+    },
+    {
+      "id": "fano-flags",
+      "chapter": "albert_flags.md",
+      "status": "paper and finite check",
+      "statement": "Twenty-one Albert projectors have fourteen orthogonal triples. Their intersections recover Fano incidence and the two six-sheet actions.",
+      "relations": [
+        {
+          "type": "realizes",
+          "target": "six-sheets"
+        }
+      ]
+    },
+    {
+      "id": "golay-planes",
+      "chapter": "albert_flags.md",
+      "status": "paper and finite check",
+      "statement": "Exactly 1,320 planes in the extended ternary Golay code admit the simultaneous quadratic and quartic null lift modulo nine.",
+      "relations": [
+        {
+          "type": "compares",
+          "target": "ternary-lift"
+        }
+      ]
+    },
+    {
+      "id": "six-sheets",
+      "chapter": "geometry_transfer.md",
+      "status": "paper and finite check",
+      "statement": "Rationally equivalent linear transports give edge functions with optimal circuit sizes 436 and 437. The gap grows by one per copy.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "L-meta-105"
+        },
+        {
+          "type": "uses",
+          "target": "L-meta-204"
+        },
+        {
+          "type": "uses",
+          "target": "L-meta-288"
+        },
+        {
+          "type": "uses",
+          "target": "L-meta-290"
+        }
+      ]
+    },
+    {
+      "id": "plane-four",
+      "chapter": "geometry_transfer.md",
+      "status": "paper and finite check",
+      "statement": "Point and line transport in the plane of order four preserves the rational metric and unit, but its two subdivided covers need 1,968 and 1,967 gates.",
+      "relations": [
+        {
+          "type": "strengthens",
+          "target": "six-sheets"
+        },
+        {
+          "type": "restricts-to",
+          "target": "octad-group"
+        }
+      ]
+    },
+    {
+      "id": "halves",
+      "chapter": "s6_lambencies.md",
+      "status": "paper and finite check",
+      "statement": "The four roots of the tetrahedral quartic are halves of a rational point at j=2304 in the six-sphere family.",
+      "relations": []
+    },
+    {
+      "id": "umbral-class",
+      "chapter": "s6_lambencies.md",
+      "status": "paper",
+      "statement": "The mod-three action at the same curve has group GL₂(3), giving a conjugacy class for lambency-six twining.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "halves"
+        },
+        {
+          "type": "compares",
+          "target": "cm-directions"
+        }
+      ]
+    },
+    {
+      "id": "modular-cover",
+      "chapter": "s6_lambencies.md",
+      "status": "paper and finite check",
+      "statement": "The marked cyclic cover and the lambency-six modular curve have a connected common cover of genus 25.",
+      "relations": [
+        {
+          "type": "compares",
+          "target": "halves"
+        }
+      ]
+    },
+    {
+      "id": "joint-primes",
+      "chapter": "marked_primes.md",
+      "status": "paper and finite check",
+      "statement": "The primes admitting both a rational half and a rational order-three direction have density 15/32.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "halves"
+        },
+        {
+          "type": "uses",
+          "target": "tetracode"
+        }
+      ]
+    },
+    {
+      "id": "prime-menu",
+      "chapter": "prime_rules.md",
+      "status": "paper under stated analytic theorems",
+      "statement": "A weighted selection of auxiliary primes for specified characteristics gives a batch of at most one plus the base-r logarithm of its size.",
+      "relations": []
+    },
+    {
+      "id": "ternary-lift",
+      "chapter": "prime_rules.md",
+      "status": "paper",
+      "statement": "An additive lift of both null equations modulo nine gives the polarized dimension bound in characteristic three.",
+      "relations": [
+        {
+          "type": "compares",
+          "target": "L-gct-122"
+        }
+      ]
+    },
+    {
+      "id": "board-menu",
+      "chapter": "matching_boards.md",
+      "status": "paper and finite check",
+      "statement": "Three full antidiagonals require at least (3/2)^k reusable signings on a family of balanced deletions.",
+      "relations": []
+    },
+    {
+      "id": "board-count",
+      "chapter": "matching_boards.md",
+      "status": "paper",
+      "statement": "On a Pfaffian input graph, a histogram with at most three core labels and t exceptional occurrences can be counted in 2^t times polynomial time.",
+      "relations": [
+        {
+          "type": "compares",
+          "target": "board-menu"
+        }
+      ]
+    },
+    {
+      "id": "inverse-size",
+      "chapter": "field_certificates.md",
+      "status": "paper and finite check",
+      "statement": "A relative trace makes an expanded inverse exponentially long even for some systems with a constant-degree refutation.",
+      "relations": []
+    },
+    {
+      "id": "cycle-content",
+      "chapter": "weighted_counts.md",
+      "status": "paper",
+      "statement": "For a supplied cycle code, an odd-prime common valuation reduces to a minimum-weight T-join.",
+      "relations": []
+    },
+    {
+      "id": "plane-coefficient",
+      "chapter": "weighted_counts.md",
+      "status": "paper",
+      "statement": "A supplied planar cycle-code realization gives individual coefficients at every modulus via a Pfaffian.",
+      "relations": [
+        {
+          "type": "strengthens",
+          "target": "cycle-content"
+        }
+      ]
+    },
+    {
+      "id": "hard-block",
+      "chapter": "weighted_counts.md",
+      "status": "paper and finite check",
+      "statement": "One specified block of a coefficient on general cycle-code inputs encodes the permanent of a binary matrix.",
+      "relations": [
+        {
+          "type": "contrasts-domain",
+          "target": "plane-coefficient"
+        }
+      ]
+    },
+    {
+      "id": "weighted-cnf",
+      "chapter": "weighted_counts.md",
+      "status": "deduction under manuscript bounds",
+      "statement": "Fixed-width CNF with a supplied small affine boundary admits the stated subexponential signed weighted count.",
+      "relations": [
+        {
+          "type": "compares",
+          "target": "hard-block"
+        }
+      ]
+    },
+    {
+      "id": "hecke-fibre",
+      "chapter": "word_order_and_padding.md",
+      "status": "finite certificate",
+      "statement": "The exceptional rank-four Hecke order requires at least 126 local module generators in its regular representation.",
+      "relations": []
+    },
+    {
+      "id": "adapted-lattice",
+      "chapter": "word_order_and_padding.md",
+      "status": "conditional on specified matrices",
+      "statement": "The exact adapted-lattice quotient follows from three finite data conditions. The regular-representation lower bound has a standalone checker.",
+      "relations": [
+        {
+          "type": "compares",
+          "target": "hecke-fibre"
+        }
+      ]
+    },
+    {
+      "id": "hasse-padding",
+      "chapter": "word_order_and_padding.md",
+      "status": "paper",
+      "statement": "The Hasse coefficient gives a sharp generic lower bound on vanishing order along repeated padding in positive characteristic.",
+      "relations": [
+        {
+          "type": "compares",
+          "target": "hecke-fibre"
+        }
+      ]
+    }
+  ]
+}
