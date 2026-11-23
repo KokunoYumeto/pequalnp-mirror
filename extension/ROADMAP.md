@@ -83,7 +83,7 @@ For each fleet node that an entry of the extension attaches to: the node's statu
 
 - [X-gct-101](entries/X-gct-101.md) [bridge, paper-proof] Level spaces at J in finite free probability: the two strata are convolution identities
 
-## L-gct-116 (conjecture) Barrier B9: the sum of all k x k subpermanents vanishes on a strip of m character rows when k m < n
+## L-gct-116 (checked) Barrier B9: the sum of all k x k subpermanents vanishes on a strip of m character rows when k m < n
 
 - [X-gct-009](entries/X-gct-009.md) [bridge, sketch] Chebotarev's theorem on roots of unity drives the row-translation bounds
 
@@ -127,7 +127,11 @@ For each fleet node that an entry of the extension attaches to: the node's statu
 
 - [X-alg-001](entries/X-alg-001.md) [bridge, sketch] #SAT mod 2 as Frobenius on the top coherent cohomology of a formula hypersurface
 
-## L-meta-150 (conjecture) AND count under restriction: removing a non-isolated vertex with its neighbours saves at least one AND gate
+## L-meta-1303 (conjecture) Affine plane of order 3 with 9 points and 9 non-vertical lines y = m x + c over Z/3: no two points on two lines, 3 points per line, 3 lines per point
+
+- [X-gen-014](entries/X-gen-014.md) [identity, second-read] The umbral groups at Coxeter number 6 from the glue codes: GL2(F3) for A5^4 D4 (and E6^4), 3.S6 for D4^6 with a normal non-central mu3
+
+## L-meta-150 (checked) AND count under restriction: removing a non-isolated vertex with its neighbours saves at least one AND gate
 
 - [X-meta-003](entries/X-meta-003.md) [special-case, paper-proof] AND count tau(G) for the maximal-independent-set partial function, on every graph emptied by deleting leaves with their neighbours
 
@@ -140,6 +144,10 @@ For each fleet node that an entry of the extension attaches to: the node's statu
 - [X-meta-104](entries/X-meta-104.md) [construction, paper-proof] The promise bound of L-meta-270 is tight at k = 1: O(q^2) AND/OR gates for all line-ORs on inputs of weight at most 1
 - [X-meta-107](entries/X-meta-107.md) [conjecture, sketch] Question: is the promise bound sum of min(k, |S_i| - 1) of L-meta-270 tight at k = 2 on planes?
   - [X-meta-104](entries/X-meta-104.md) [construction, paper-proof] The promise bound of L-meta-270 is tight at k = 1: O(q^2) AND/OR gates for all line-ORs on inputs of weight at most 1
+
+## L-meta-458 (conjecture) Search: a monotone circuit with at most 8 AND gates for the edge function of the Pappus graph
+
+- [X-gen-014](entries/X-gen-014.md) [identity, second-read] The umbral groups at Coxeter number 6 from the glue codes: GL2(F3) for A5^4 D4 (and E6^4), 3.S6 for D4^6 with a normal non-central mu3
 
 ## L-meta-606 (conjecture) Conjecture: circuits of AND and OR gates for the edge function of a graph with no cycle shorter than 5 have size linear in the number of edges
 
@@ -159,12 +167,13 @@ For each fleet node that an entry of the extension attaches to: the node's statu
 - [X-meta-001](entries/X-meta-001.md) [barrier, paper-proof] Weight barrier: on the affine-plane incidence graphs, circuits of O(w n) gates reject every independent set of at most w vertices
 - [X-meta-002](entries/X-meta-002.md) [special-case, paper-proof] |E| + tau - 1 for circuits with one level of AND gates, on every graph without 4-cycles
 
-## L-meta-632 (conjecture) Graphs without 4-cycles: the least size of a partial-function AND-count circuit equals the vertex cover number
+## L-meta-632 (refuted) Graphs without 4-cycles: the least size of a partial-function AND-count circuit equals the vertex cover number
 
 - [X-meta-003](entries/X-meta-003.md) [special-case, paper-proof] AND count tau(G) for the maximal-independent-set partial function, on every graph emptied by deleting leaves with their neighbours
 
 ## L-meta-650 (conjecture) Search: a circuit of AND and OR gates with at most 63 gates for the point-line graph of the projective plane of order 3
 
+- [X-gen-013](entries/X-gen-013.md) [identity, second-read] PG(2,3) with its polarity is P(sl2(F3)) with the determinant form; its conic is P^1(F3); the (2,3,6) triangle group maps onto the Singer normalizer with polarity for q = 2, 3
 - [X-meta-004](entries/X-meta-004.md) [construction, second-read] The plane of L-meta-650 in Singer form; its affine part AG(2,3) is the tetracode configuration
 
 ## L-meta-651 (conjecture) Petersen graph: no circuit of AND, OR (fan-in two) and NOT gates with at most 19 gates computes its edge function
@@ -196,11 +205,11 @@ For each fleet node that an entry of the extension attaches to: the node's statu
 - [X-meta-103](entries/X-meta-103.md) [barrier, paper-proof] Negation budget: log2(N + 1) NOT gates already give N polylog N; any bound c^s q N for s NOT gates has c <= 2^(-1/2)
   - [X-meta-102](entries/X-meta-102.md) [construction, paper-proof] With NOT gates the line-ORs of a Desarguesian plane cost N polylog N; without, exactly N q
 
-## L-meta-711 (conjecture) Assuming two stated facts, AND/OR/NOT lists with at most one NOT gate computing the 73 line-ORs of the plane of order 8 have at least 292 gates
+## L-meta-711 (checked) Assuming two stated facts, AND/OR/NOT lists with at most one NOT gate computing the 73 line-ORs of the plane of order 8 have at least 292 gates
 
 - [X-meta-102](entries/X-meta-102.md) [construction, paper-proof] With NOT gates the line-ORs of a Desarguesian plane cost N polylog N; without, exactly N q
 
-## L-meta-712 (conjecture) Assuming two stated facts, AND/OR/NOT lists with at most two NOT gates computing the 73 line-ORs of the plane of order 8 have at least 112 gates
+## L-meta-712 (checked) Assuming two stated facts, AND/OR/NOT lists with at most two NOT gates computing the 73 line-ORs of the plane of order 8 have at least 112 gates
 
 - [X-meta-102](entries/X-meta-102.md) [construction, paper-proof] With NOT gates the line-ORs of a Desarguesian plane cost N polylog N; without, exactly N q
 
@@ -216,37 +225,45 @@ For each fleet node that an entry of the extension attaches to: the node's statu
 - [X-meta-107](entries/X-meta-107.md) [conjecture, sketch] Question: is the promise bound sum of min(k, |S_i| - 1) of L-meta-270 tight at k = 2 on planes?
   - [X-meta-104](entries/X-meta-104.md) [construction, paper-proof] The promise bound of L-meta-270 is tight at k = 1: O(q^2) AND/OR gates for all line-ORs on inputs of weight at most 1
 
-## L-meta-885 (conjecture) Conditional: ORs of a plane-like family by AND, OR, NOT gates with at most T NOT gates, each reading a monotone wire: an explicit lower bound
+## L-meta-885 (checked) Conditional: ORs of a plane-like family by AND, OR, NOT gates with at most T NOT gates, each reading a monotone wire: an explicit lower bound
 
 - [X-meta-103](entries/X-meta-103.md) [barrier, paper-proof] Negation budget: log2(N + 1) NOT gates already give N polylog N; any bound c^s q N for s NOT gates has c <= 2^(-1/2)
   - [X-meta-102](entries/X-meta-102.md) [construction, paper-proof] With NOT gates the line-ORs of a Desarguesian plane cost N polylog N; without, exactly N q
 
-## L-meta-890 (conjecture) Conditional on the few-NOT bound for monotone reads: plane of order 8, at most 2 NOT gates each reading a monotone wire: at least 144 gates
+## L-meta-890 (checked) Conditional on the few-NOT bound for monotone reads: plane of order 8, at most 2 NOT gates each reading a monotone wire: at least 144 gates
 
 - [X-meta-103](entries/X-meta-103.md) [barrier, paper-proof] Negation budget: log2(N + 1) NOT gates already give N polylog N; any bound c^s q N for s NOT gates has c <= 2^(-1/2)
   - [X-meta-102](entries/X-meta-102.md) [construction, paper-proof] With NOT gates the line-ORs of a Desarguesian plane cost N polylog N; without, exactly N q
 
-## L-meta-894 (conjecture) Conditional on the few-NOT bound for monotone reads: plane of order 8, at most 3 NOT gates each reading a monotone wire: at least 80 gates
+## L-meta-894 (checked) Conditional on the few-NOT bound for monotone reads: plane of order 8, at most 3 NOT gates each reading a monotone wire: at least 80 gates
 
 - [X-meta-103](entries/X-meta-103.md) [barrier, paper-proof] Negation budget: log2(N + 1) NOT gates already give N polylog N; any bound c^s q N for s NOT gates has c <= 2^(-1/2)
   - [X-meta-102](entries/X-meta-102.md) [construction, paper-proof] With NOT gates the line-ORs of a Desarguesian plane cost N polylog N; without, exactly N q
 
-## L-meta-899 (conjecture) Conditional on the few-NOT bound for monotone reads: plane of order 9, at most 2 NOT gates each reading a monotone wire: at least 189 gates
+## L-meta-899 (checked) Conditional on the few-NOT bound for monotone reads: plane of order 9, at most 2 NOT gates each reading a monotone wire: at least 189 gates
 
 - [X-meta-103](entries/X-meta-103.md) [barrier, paper-proof] Negation budget: log2(N + 1) NOT gates already give N polylog N; any bound c^s q N for s NOT gates has c <= 2^(-1/2)
   - [X-meta-102](entries/X-meta-102.md) [construction, paper-proof] With NOT gates the line-ORs of a Desarguesian plane cost N polylog N; without, exactly N q
 
-## L-meta-900 (conjecture) Conditional on the few-NOT bound for monotone reads: plane of order 9, at most 3 NOT gates each reading a monotone wire: at least 108 gates
+## L-meta-900 (checked) Conditional on the few-NOT bound for monotone reads: plane of order 9, at most 3 NOT gates each reading a monotone wire: at least 108 gates
 
 - [X-meta-103](entries/X-meta-103.md) [barrier, paper-proof] Negation budget: log2(N + 1) NOT gates already give N polylog N; any bound c^s q N for s NOT gates has c <= 2^(-1/2)
   - [X-meta-102](entries/X-meta-102.md) [construction, paper-proof] With NOT gates the line-ORs of a Desarguesian plane cost N polylog N; without, exactly N q
+
+## L-meta-907 (checked) Nine affine-line ORs over Z_3: no fan-in-two circuit with at most 17 AND/OR gates and at most one NOT gate computes all nine
+
+- [X-gen-014](entries/X-gen-014.md) [identity, second-read] The umbral groups at Coxeter number 6 from the glue codes: GL2(F3) for A5^4 D4 (and E6^4), 3.S6 for D4^6 with a normal non-central mu3
+
+## L-meta-911 (conjecture) Nine affine-line ORs over Z_3: some fan-in-two circuit with at most 17 AND/OR gates and at most one NOT gate computes all nine
+
+- [X-gen-014](entries/X-gen-014.md) [identity, second-read] The umbral groups at Coxeter number 6 from the glue codes: GL2(F3) for A5^4 D4 (and E6^4), 3.S6 for D4^6 with a normal non-central mu3
 
 ## L-meta-926 (conjecture) Edge functions of 85 small graphs with no 4-cycle: circuits of AND, OR and NOT of fan-in two with edges + cover - 1 gates
 
 - [X-meta-105](entries/X-meta-105.md) [counterexample, paper-proof] With NOT gates the edge function of a plane incidence graph has circuits of size n polylog n, far below edges + cover - 1
   - [X-meta-102](entries/X-meta-102.md) [construction, paper-proof] With NOT gates the line-ORs of a Desarguesian plane cost N polylog N; without, exactly N q
 
-## L-meta-927 (conjecture) Edge functions of 85 small graphs with no 4-cycle: no circuit of AND, OR and NOT of fan-in two with fewer than edges + cover - 1 gates
+## L-meta-927 (checked) Edge functions of 85 small graphs with no 4-cycle: no circuit of AND, OR and NOT of fan-in two with fewer than edges + cover - 1 gates
 
 - [X-meta-105](entries/X-meta-105.md) [counterexample, paper-proof] With NOT gates the edge function of a plane incidence graph has circuits of size n polylog n, far below edges + cover - 1
   - [X-meta-102](entries/X-meta-102.md) [construction, paper-proof] With NOT gates the line-ORs of a Desarguesian plane cost N polylog N; without, exactly N q
@@ -273,11 +290,17 @@ For each fleet node that an entry of the extension attaches to: the node's statu
 
 ## L-meta-956 (conjecture) Plane of order 3: every list of AND, OR and NOT gates of fan-in at most two with at most one NOT gate computing the 13 line-ORs has at least 39 gates
 
+- [X-gen-013](entries/X-gen-013.md) [identity, second-read] PG(2,3) with its polarity is P(sl2(F3)) with the determinant form; its conic is P^1(F3); the (2,3,6) triangle group maps onto the Singer normalizer with polarity for q = 2, 3
 - [X-meta-102](entries/X-meta-102.md) [construction, paper-proof] With NOT gates the line-ORs of a Desarguesian plane cost N polylog N; without, exactly N q
 
 ## L-meta-957 (conjecture) Search: a list of AND, OR and NOT gates of fan-in at most two with at most one NOT gate and at most 38 gates computing the 13 line-ORs of the plane of order 3
 
+- [X-gen-013](entries/X-gen-013.md) [identity, second-read] PG(2,3) with its polarity is P(sl2(F3)) with the determinant form; its conic is P^1(F3); the (2,3,6) triangle group maps onto the Singer normalizer with polarity for q = 2, 3
 - [X-meta-102](entries/X-meta-102.md) [construction, paper-proof] With NOT gates the line-ORs of a Desarguesian plane cost N polylog N; without, exactly N q
+
+## L-meta-972 (conjecture) Every circuit of AND and OR gates for the point-line graph of the projective plane of order 3 has at least 64 gates
+
+- [X-gen-013](entries/X-gen-013.md) [identity, second-read] PG(2,3) with its polarity is P(sl2(F3)) with the determinant form; its conic is P^1(F3); the (2,3,6) triangle group maps onto the Singer normalizer with polarity for q = 2, 3
 
 ## L-pcx-036 (checked) Dag-like Res(+) refutations of bit pigeonhole have more than exp(n / (32768 log^2 n)) lines
 
