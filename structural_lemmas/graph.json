@@ -194,6 +194,18 @@
       ]
     },
     {
+      "id": "albanese-character",
+      "chapter": "s6_lambencies.md",
+      "status": "paper",
+      "statement": "The normalized invariant of the multiplicity-four Albanese torus on the parameter disc equals the graded dimension series of the moonshine module at its specified nome.",
+      "relations": [
+        {
+          "type": "compares",
+          "target": "modular-cover"
+        }
+      ]
+    },
+    {
       "id": "joint-primes",
       "chapter": "marked_primes.md",
       "status": "paper and finite check",
@@ -254,6 +266,138 @@
         {
           "type": "compares",
           "target": "level-three-map"
+        }
+      ]
+    },
+    {
+      "id": "level-k3",
+      "chapter": "modular_coordinates.md",
+      "status": "paper and finite check",
+      "statement": "On the admissible level-six parameter line, the K3 point-count formula is a signed elliptic symmetric square with quadratic character given by x+9.",
+      "relations": [
+        {
+          "type": "shares-parameter",
+          "target": "level-three-map"
+        },
+        {
+          "type": "compares",
+          "target": "quadratic-twist"
+        }
+      ]
+    },
+    {
+      "id": "six-ramification",
+      "chapter": "conductor_symmetries.md",
+      "status": "paper and finite check",
+      "statement": "The six distinguished two-torsion points of the marked Jacobian carry the same three paired orbits as the six ramification points of its Klein-four period cover.",
+      "relations": [
+        {
+          "type": "compares",
+          "target": "six-sheets"
+        },
+        {
+          "type": "compares",
+          "target": "fano-flags"
+        }
+      ]
+    },
+    {
+      "id": "cusp-obstruction",
+      "chapter": "conductor_symmetries.md",
+      "status": "paper and finite check",
+      "statement": "Halved squared inertia yields the marked cusp map (2,3,3). Its only permutation symmetry is the identity, so no fibration automorphism cycles the three exceptional fibres.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "six-ramification"
+        }
+      ]
+    },
+    {
+      "id": "level-four-six",
+      "chapter": "conductor_symmetries.md",
+      "status": "paper and finite check",
+      "statement": "The projective level-four cover and the level-six line have a connected common cover over their shared level-two parameter. Its genus is three and its degree over the ordinary j-line is 96.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "six-ramification"
+        },
+        {
+          "type": "shares-parameter",
+          "target": "level-k3"
+        },
+        {
+          "type": "compares",
+          "target": "modular-cover"
+        }
+      ]
+    },
+    {
+      "id": "shadow-torsion",
+      "chapter": "shadow_point_counts.md",
+      "status": "paper and finite check",
+      "statement": "Two entries of the lambency-six twined shadow matrix give the cardinality of the elliptic three-torsion fixed by Frobenius and by its negative.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "umbral-class"
+        },
+        {
+          "type": "compares",
+          "target": "quadratic-twist"
+        }
+      ]
+    },
+    {
+      "id": "shadow-k3",
+      "chapter": "shadow_point_counts.md",
+      "status": "paper and finite check",
+      "statement": "The first shadow entry determines the corresponding K3 point count modulo three once its quadratic character is supplied. The character is trivial on good points of the conductor period cover.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "level-k3"
+        },
+        {
+          "type": "uses",
+          "target": "shadow-torsion"
+        },
+        {
+          "type": "uses",
+          "target": "level-four-six"
+        }
+      ]
+    },
+    {
+      "id": "three-quotients",
+      "chapter": "conductor_symmetries.md",
+      "status": "paper and finite check",
+      "statement": "The genus-three common cover has Jacobian rationally isogenous to two copies of one elliptic curve and its minus-one quadratic twist. This determines every good finite-field point count.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "level-four-six"
+        },
+        {
+          "type": "uses",
+          "target": "six-ramification"
+        }
+      ]
+    },
+    {
+      "id": "order-seven",
+      "chapter": "conductor_symmetries.md",
+      "status": "paper",
+      "statement": "The common elliptic invariant is nonintegral, excluding complex multiplication. The genus-three Jacobian thus admits no origin-preserving automorphism of order seven even up to isogeny.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "three-quotients"
+        },
+        {
+          "type": "compares",
+          "target": "fano-flags"
         }
       ]
     },
@@ -365,7 +509,7 @@
       "id": "hecke-fibre",
       "chapter": "word_order_and_padding.md",
       "status": "finite certificate",
-      "statement": "The exceptional rank-four Hecke order requires at least 126 local module generators in its regular representation.",
+      "statement": "The rank-four Hecke order has generic rank 114 and needs at least 126 module generators at the exceptional point. Two length-ten words survive modulo all shorter words.",
       "relations": []
     },
     {
@@ -389,6 +533,30 @@
         {
           "type": "compares",
           "target": "hecke-fibre"
+        }
+      ]
+    },
+    {
+      "id": "plethysm-ray",
+      "chapter": "plethysm_ray.md",
+      "status": "paper and finite check",
+      "statement": "Hitchin’s quartic and one derivative freely generate a width-seven plethysm ray with multiplicity k+1 in degree 6k.",
+      "relations": [
+        {
+          "type": "compares",
+          "target": "kronecker-pair"
+        }
+      ]
+    },
+    {
+      "id": "stable-foulkes",
+      "chapter": "plethysm_ray.md",
+      "status": "paper and finite check",
+      "statement": "The first tail of that ray contributes twice in one symmetric-algebra factor. Its complete stable Foulkes coefficient is 2,097.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "plethysm-ray"
         }
       ]
     },
@@ -449,6 +617,26 @@
         {
           "type": "same-encoding",
           "target": "inverse-size"
+        }
+      ]
+    },
+    {
+      "id": "field-maps",
+      "chapter": "fleet_crosswalk.md",
+      "status": "proposals with individual statuses",
+      "statement": "Five field maps locate 60 proposed connections across algebra and combinatorics, moonshine, algebraic geometry, arithmetic and Hodge theory. Each entry identifies its targets and the step required.",
+      "relations": [
+        {
+          "type": "compares",
+          "target": "selected-edge"
+        },
+        {
+          "type": "compares",
+          "target": "ternary-lift"
+        },
+        {
+          "type": "compares",
+          "target": "hasse-padding"
         }
       ]
     }

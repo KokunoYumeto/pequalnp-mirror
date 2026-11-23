@@ -4,6 +4,8 @@ On the elliptic curve $E:y^2=x^3-3x+1$ over $\mathbb Q$, the twelve cyclic subgr
 
 ## The two modular functions
 
+The choice of the level-six coordinate and its Fricke combination follows The Clankers, *Support-prime moonshine completion of the residual modulo-840 Erdős–Straus datum* (May 2026), in the section on the Fricke involution. The field trace below uses the map that forgets the cyclic subgroup of order six.
+
 Put $q=e^{2\pi i\tau}$ and $\eta(\tau)=q^{1/24}\prod_{n\ge1}(1-q^n)$. The coordinate on $X_0(6)$ used here is
 
 $$

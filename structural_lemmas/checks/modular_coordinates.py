@@ -34,3 +34,21 @@ points = 1 + sum((y*y-u**3+3*u-1)%17 == 0 for y in range(17) for u in range(17))
 assert hasse(-3,1,17) == (18-points)%17
 print("j3(gamma(x))=j6, branch factor and quadratic twists exact")
 print("E at 17: cardinality",points,"trace",18-points,"Hasse coefficient",hasse(-3,1,17))
+
+def character(u, p):
+    value = pow(u % p, (p-1)//2, p)
+    return -1 if value == p-1 else value
+
+checks = 0
+for p in (5,7,11,13,17,19,23,29):
+    for u in range(p):
+        if (u*(u+8)*(u+9)*(u*u+36*u+216))%p == 0:
+            continue
+        ell = u**3*(u+8)*pow(64*(u+9)**3,-1,p)%p
+        a = -sum(character((v-1)*(v*v-pow(ell+1,-1,p)),p) for v in range(p))
+        affine = sum(character(v*w*(v+1)*(w+1)*(v+ell*w),p)
+                     for v in range(p) for w in range(p))
+        assert character(ell+1,p) == character(u+9,p)
+        assert affine == character(u+9,p)*(a*a-p)
+        checks += 1
+print("surface character sums checked:", checks)

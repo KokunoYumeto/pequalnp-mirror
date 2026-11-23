@@ -2,6 +2,17 @@
 
 The AI-produced *Signed Counts and Winding* series uses the polynomial $u^4+8u+12$ in Paper V, *One global cut for the tetrahedral extension*. This polynomial is the equation for halving a rational point of the member $t=4/3$ of the elliptic family studied in the six-sphere workbench. Its modular invariant is $2304$. The same parameter line also receives the modular curve of lambency six for the Niemeier root system $A_5^4D_4$.
 
+## A Monster character on a geometric parameter disc
+
+The six-sphere construction also has a multiplicative parameter $w$, with $0<|w|<216$. Its reduced multiplicity-four surface $S_2(w)$ has an elliptic Albanese variety with nome $q_2=iw/216$. The workbench's Proposition D.1.1 identifies the ordinary invariant $j(\operatorname{Alb} S_2(w))=j(q_2)$ and proves a natural boundary at $|w|=216$. The letter $J$ used in that proposition has constant term $744$. Subtracting it yields an exact character formula. If $V^\natural_n$ is the weight-$n$ subspace of the moonshine module of Frenkel, Lepowsky and Meurman, then
+
+$$
+j(\operatorname{Alb} S_2(w))-744
+=\sum_{n\geq 0}\dim V^\natural_n\,(iw/216)^{n-1}.
+$$
+
+For example, the leading Laurent coefficient in $w$ is $-216i$, and the coefficient of $w$ is $196884i/216=1823i/2$. At $w=-216i e^{-2\pi}$ the Albanese torus has square period ratio $i$; the ordinary and normalized values are 1728 and 984. The graded dimensions in the identity come from the moonshine module. Constructing a Monster action on the six-sphere or its cohomology would require an additional representation. [Six-sphere Albanese invariant, Proposition D.1.1](https://github.com/KokunoYumeto/s6-complex-structure-workbench/blob/83d76022bcd442278b760db9ff438afceed6c6ea/pro_returns/S6_02_PUSH_final_20261115T2217Z/S6_02_PUSH/sections/D_push.tex) · [Borcherds, *Introduction to the monster Lie algebra*](https://math.berkeley.edu/~reb/papers/mla/mla.pdf)
+
 ## The four halves
 
 Use the workbench's normalization $t=j/1728$, over a field of characteristic zero. Away from $t=0,1$ the family has the equation and section
@@ -101,6 +112,6 @@ For example, 17 and 19 both give double transpositions on the four halves, since
 
 The standard lambency-six shadow is explicit. With $r,s$ modulo twelve its coefficient matrix is $\Omega_{r,s}=5\delta_{r,s}+\delta_{s,5r}$; it acts on $S_{6,r}=\sum_{n\equiv r\ (12)}nq^{n^2/24}$. The same integral construction has a distinct fourth unimodular extension with root system $A_2^{12}$, hence lambency 3 and umbral group $2.M_{12}$. Its marked order-three isometry acts within each $A_2$ component as either the identity or a Weyl rotation, and so its image in this second umbral group is the identity. [Fixed fourth extension and explicit root action](https://github.com/KokunoYumeto/s6-complex-structure-workbench/blob/83d76022bcd442278b760db9ff438afceed6c6ea/codex_workspace/canonical_S6_snapshot/supporting_materials/workbench/research/es_niemeier_residue_fixed_neighbor.tex) · [Umbral root systems and groups](https://arxiv.org/abs/1307.5793)
 
-An identity expressing arithmetic point counts or winding traces as *coefficients* of the assigned mock modular series would be a further theorem. The common cover gives a place to compare the functions, and the mod-3 representation determines their conjugacy-class labels. The modular fibre at $j=2304$ has twelve cyclic subgroups of order six over the algebraic closure. None is defined over $\mathbb Q$, since its unique subgroup of order two would yield a rational root of $x^3-3x+1$. Selecting a level structure over an extension, or defining an average on this fibre, gives different evaluation problems.
+Two leading coefficients of the assigned **shadow** recover the cardinalities of rational 3-torsion on the elliptic curve and its quadratic twist. One also gives the associated K3 point count modulo three after specifying a quadratic character. An identification with coefficients of the holomorphic mock series would require a further argument. The modular fibre at $j=2304$ has twelve cyclic subgroups of order six over the algebraic closure. Each subgroup's unique order-two point has abscissa a root of the irreducible $x^3-3x+1$, so all twelve markings require an extension of $\mathbb Q$. [A proof of the shadow coefficient identities](shadow_point_counts.md)
 
 [Modular cover, halving and torsion calculations](checks/modular_cover.py)

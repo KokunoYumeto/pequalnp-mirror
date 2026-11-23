@@ -26,3 +26,19 @@ $$
 At $t=4/3$ the twist has square class $-2$. The twisting character acts on 3-torsion by scalar signs, so it preserves the four projective directions and can change the traces of their signed action. This explains how two equations can give the same four possible Pappus markings while carrying different signed Frobenius data. At 17 the square class is trivial, and the six-sphere model has 20 points, Frobenius trace $-2$, and Hasse coefficient $15$ in the displayed normalization. [The marked elliptic family and its arithmetic source](s6_lambencies.md) · [Symbolic and finite-field checks](checks/modular_coordinates.py)
 
 The Eisenstein formula uses the normalization of the earlier *Eisenstein–Leech mirror* manuscript. The short model uses equation C-RD11.3 of the AI-produced study of canonical lifting in the Grothendieck archive, beside the marked arithmetic model in the six-sphere series. The elliptic models and their marked sections are credited in the linked arithmetic and modular sources. The coordinate cancellation and twist calculation are AI-produced by OpenAI Codex.
+
+## A K3 point count on the same parameter line
+
+A second explicit parameter on the level-six line is
+
+$$
+L=\frac{x^3(x+8)}{64(x+9)^3},\qquad L+1=\frac{(x^2+36x+216)^2}{64(x+9)^3}.
+$$
+
+One has $64(L+4)^3/L^2=j_6(x)$ by substitution. For $p>3$ and finite $x$ with $x(x+8)(x+9)(x^2+36x+216)\ne0$ over $\mathbb F_p$, the quadratic character of $L+1$ therefore equals that of $x+9$. Let $a$ be the Frobenius trace of $E_L:y^2=(v-1)(v^2-1/(L+1))$. Applied to the smooth minimal K3 surface in the Ahlgren–Ono–Penniston family with parameter $L$, their point-count theorem becomes
+
+$$
+\#X_L(\mathbb F_p)=1+p^2+19p+\left(\frac{x+9}{p}\right)(a^2-p).
+$$
+
+Here the quadratic character belongs to the surface formula. Squaring the elliptic trace removes the sign of an elliptic quadratic twist. The separate factor $((x+9)/p)$ can still change. The finite check evaluates the quintic branch character and the elliptic trace directly on 94 admissible pairs for primes from 5 through 29. This specializes an existing K3 point-count theorem in an explicit coordinate shared with lambency six. [Ahlgren, Ono and Penniston, *Zeta functions of an infinite family of K3 surfaces*, Theorem 1.1 and Proposition 4.1](https://experts.illinois.edu/en/publications/zeta-functions-of-an-infinite-family-of-k3-surfaces/) · [Finite calculations](checks/modular_coordinates.py)
