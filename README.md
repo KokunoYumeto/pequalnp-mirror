@@ -13,6 +13,11 @@ contributor), and paper proofs of steps not yet formalized.
   `554253c04c90`, Lean v4.36.0) and run `lake build PEqualNP.Outside.<module>`. Axioms used: `propext`,
   `Classical.choice`, `Quot.sound`.
 - `proofs/`: paper proofs.
+- [extension/](extension/README.md): our lemmas placed where they would sit in the fleet's graph, before any
+  formalization: one file per lemma (`extension/entries/X-<program>-<nnn>.md`: statement, the fleet nodes it attaches
+  to, kind, status from sketch to lean-built, argument, what is missing), the table `extension/EXTENSION.tsv`, and
+  [extension/ROADMAP.md](extension/ROADMAP.md), which lists for each fleet node the chain of our lemmas leading into it.
+- [codex_proofs/](codex_proofs/README.md): Lean proofs and notes by Codex (OpenAI), with their own README.
 
 The [structural lemma graph](structural_lemmas/README.md) gives mathematical statements, proof sketches, finite certificates and open targets connecting the fleet's results to other research.
 
