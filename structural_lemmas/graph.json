@@ -172,7 +172,7 @@
       "statement": "The mod-three action at the same curve has group GL₂(3), giving a conjugacy class for lambency-six twining.",
       "relations": [
         {
-          "type": "uses",
+          "type": "same-curve",
           "target": "halves"
         },
         {
@@ -206,6 +206,70 @@
         {
           "type": "uses",
           "target": "tetracode"
+        }
+      ]
+    },
+    {
+      "id": "level-six",
+      "chapter": "fricke_trace.md",
+      "status": "paper and finite check",
+      "statement": "The twelve level-six markings over j=2304 form one Galois orbit. The normalized Fricke trace over them is 1,500.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "modular-cover"
+        },
+        {
+          "type": "compares",
+          "target": "joint-primes"
+        }
+      ]
+    },
+    {
+      "id": "level-three-map",
+      "chapter": "modular_coordinates.md",
+      "status": "paper and finite check",
+      "statement": "A cubic rational map sends the level-six parameter to the Eisenstein parameter and preserves the ordinary elliptic invariant.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "modular-cover"
+        },
+        {
+          "type": "compares",
+          "target": "level-six"
+        }
+      ]
+    },
+    {
+      "id": "quadratic-twist",
+      "chapter": "modular_coordinates.md",
+      "status": "paper",
+      "statement": "The two elliptic models differ by the square class −2 at the marked arithmetic point. Projective directions survive, and signed traces acquire the twisting character.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "umbral-class"
+        },
+        {
+          "type": "compares",
+          "target": "level-three-map"
+        }
+      ]
+    },
+    {
+      "id": "joint-level-six",
+      "chapter": "marked_primes.md",
+      "status": "paper and finite check",
+      "statement": "A rational half and a cyclic order-six subgroup coexist on a set of primes of density 5/96.",
+      "relations": [
+        {
+          "type": "uses",
+          "target": "joint-primes"
+        },
+        {
+          "type": "compares",
+          "target": "level-six"
         }
       ]
     },
@@ -325,6 +389,66 @@
         {
           "type": "compares",
           "target": "hecke-fibre"
+        }
+      ]
+    },
+    {
+      "id": "kronecker-pair",
+      "chapter": "kronecker_boards.md",
+      "status": "paper and finite check",
+      "statement": "Changing a single symmetric pair of displacements changes an explicit simplex-like Kronecker coefficient from a binomial coefficient to zero.",
+      "relations": [
+        {
+          "type": "compares",
+          "target": "board-count"
+        }
+      ]
+    },
+    {
+      "id": "nearby-code",
+      "chapter": "cycle_distance_and_anchor.md",
+      "status": "paper and finite check",
+      "statement": "A supplied genus-g cycle code within binary subspace distance k gives individual coefficients in 2^k 4^g times polynomial time.",
+      "relations": [
+        {
+          "type": "extends",
+          "target": "plane-coefficient"
+        }
+      ]
+    },
+    {
+      "id": "gcd-anchors",
+      "chapter": "cycle_distance_and_anchor.md",
+      "status": "paper and finite check",
+      "statement": "Certified periods of the decoded Boolean predicate remove characters from the sparse-gcd probe and shrink its required fibre degree.",
+      "relations": [
+        {
+          "type": "compares",
+          "target": "nearby-code"
+        }
+      ]
+    },
+    {
+      "id": "weil-scalar",
+      "chapter": "finite_field_operator.md",
+      "status": "paper and finite check",
+      "statement": "On an ordinary Artin–Schreier family the first J extension counts are identical to the projective line while the scalar of a local Weil operator determines the number of witnesses.",
+      "relations": [
+        {
+          "type": "compares",
+          "target": "gcd-anchors"
+        }
+      ]
+    },
+    {
+      "id": "refutation-transfer",
+      "chapter": "boolean_refutations.md",
+      "status": "paper under stated proof-complexity theorems",
+      "statement": "The same random local Boolean encoding has linear degree in polynomial calculus over every field and survives linearly many rounds of real Lasserre.",
+      "relations": [
+        {
+          "type": "same-encoding",
+          "target": "inverse-size"
         }
       ]
     }

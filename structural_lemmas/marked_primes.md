@@ -19,3 +19,9 @@ The table gives the smallest good prime exhibiting each pair of fixed-point coun
 | 4 | 71 | 199 | 197 | 379 |
 
 For instance, $p=5$ permits a rational half but no rational Pappus marking. At $p=13$ both choices are unique. At $p=379$ Frobenius fixes every member of both sets. The last event has density $1/288$. These are statements about choosing a direction on the given arithmetic curve. The abstract Boolean circuit problems use the same 18-vertex graph for every geometric choice of direction. [Exact enumeration and group weights](checks/marked_primes.py)
+
+## Comparing the order-six condition
+
+A cyclic subgroup of order six is the sum of an order-two subgroup and an order-three subgroup. The three nonzero elements of $E[2]$ act on the four halves by translations. They correspond to the three partitions of those halves into pairs. On those partitions the action of $A_4$ is its quotient $C_3$. An element fixes a partition precisely when it belongs to the normal four-group. Hence a rational level-six marking exists with density $(4/12)(15/24)=5/24$. Requiring a rational half as well restricts the four-group element to the identity, since its other three elements are fixed-point-free translations. The density of the full conjunction is **$5/96$**.
+
+These conditions separate even at small primes. At 13 there is a rational half and a rational order-three subgroup, while the cubic $x^3-3x+1$ has no root. At 19 this cubic splits completely and the order-three direction is unique, while the halving quartic has no root. Thus one can have a rational direction of the Pappus configuration in either case. The two examples distinguish the kinds of binary arithmetic data that can accompany it.

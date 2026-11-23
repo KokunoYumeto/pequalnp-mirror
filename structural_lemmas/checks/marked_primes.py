@@ -38,6 +38,14 @@ def main():
     probability = Fraction(sum(m for (h, l), m in joint.items() if h and l), total)
     assert probability == Fraction(15, 32)
     print("Both kinds of marking exist:", probability)
+    pairs = {frozenset({frozenset({0,j}), frozenset(set(range(4)) - {0,j})}) for j in (1,2,3)}
+    def fixes_partition(g):
+        return any(frozenset(frozenset(g[v] for v in pair) for pair in part) == part for part in pairs)
+    level_six = [(g,h) for g in a4 for h in s4 if fixes_partition(g) and fixed_points(h)]
+    assert Fraction(len(level_six),total) == Fraction(5,24)
+    assert Fraction(sum(bool(fixed_points(g)) for g,h in level_six),total) == Fraction(5,96)
+    for prime, expected in [(13,0),(19,3)]:
+        assert sum((x**3-3*x+1)%prime == 0 for x in range(prime)) == expected
 
 
 if __name__ == "__main__":
