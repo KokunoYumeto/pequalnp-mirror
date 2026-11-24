@@ -2,6 +2,8 @@
 
 For each fleet node that an entry of the extension attaches to: the node's status and title in the fleet's graph, then the entries leading into it, each with its kind and status; indented lines are the entries it uses. Entries: `entries/`. Status words: sketch, paper-proof (no second reader), second-read, lean-built, refuted.
 
+External results that bear on these nodes: two claimed, unrefereed proofs of VP ≠ VNP (23 and 24 November 2026), checked by no human mathematician; see `EXTERNAL.md`. Their marks are quoted under the nodes concerned.
+
 ## L-alg-006 (conjecture) HARD LINK (restated, corrected): bit PHP needs superpolynomial dag-like R(lin) refutations over the integers with SYNTACTIC rules
 
 - [X-alg-101](entries/X-alg-101.md) [barrier, sketch] The subexponential counting algorithm for k-SAT is outside every proof system with a checked lower bound on the board
@@ -18,6 +20,8 @@ For each fleet node that an entry of the extension attaches to: the node's statu
 - [X-gct-103](entries/X-gct-103.md) [conjecture, sketch] Power-sum subrank of the permanent: how many variables of x_1^m + ... + x_d^m fit inside perm_m
 
 ## L-gct-086 (conjecture) TARGET: level spaces of the permanent at J are linear: dim L <= C n whenever perm(J_n + t) = n! on L
+
+> External: moot as a route if either claim holds (its payoff through L-gct-077, m^2 - O(m), lies below the claimed bounds); the statement stays open; neither claim checked by humans. See EXTERNAL.md.
 
 - [X-gct-001](entries/X-gct-001.md) [barrier, paper-proof] Taylor-order barrier: a linear bound for level spaces needs Taylor orders up to about n/(C+1)
 - [X-gct-002](entries/X-gct-002.md) [reduction, paper-proof] Self-similarity: level spaces inside F_q are the level spaces of a q-uniform hyper-permanent
@@ -57,13 +61,25 @@ For each fleet node that an entry of the extension attaches to: the node's statu
 
 ## L-gct-011 (conjecture) Mulmuley-Sohoni separation conjecture (open target of the program)
 
+> External: implied if either claim holds; neither claim checked by humans. OpenAI Corollary 1.2 excludes the padded permanent from the determinant orbit closure for every N <= exp(c (log m)^(5/4)), which contains N = m^c + 1 for every c; Anthropic Theorem 1.4 gives it through Remark N.6 (not formalized) and polynomial-size determinant circuits. Both use the converse of L-gct-006. See EXTERNAL.md.
+
 - [X-gct-007](entries/X-gct-007.md) [special-case, sketch] Mulmuley-Sohoni non-containment for c <= 2: the case of L-gct-011 that L-gct-074 already gives
 
 ## L-gct-026 (conjecture) Cubic lower bound for border determinantal complexity of the permanent (unrefereed 2026 claim)
 
+> External: implied if either claim holds; neither claim checked by humans. Either claim gives a superpolynomial lower bound on the border determinantal complexity of perm_m (exp(Omega((log m)^(5/4))) from OpenAI Corollary 1.2; m^(Omega((log m)^(1/3))) from Anthropic Theorem 1.4), which exceeds m^3/c for all large m. See EXTERNAL.md.
+
 - [X-gct-103](entries/X-gct-103.md) [conjecture, sketch] Power-sum subrank of the permanent: how many variables of x_1^m + ... + x_d^m fit inside perm_m
 
+## L-gct-028 (conjecture) Border Mignon-Ressayre plus one: border dc(perm_m) >= m^2/2 + 1 for m >= 3 (open here)
+
+> External: implied for all m >= m0 if either claim holds; neither claim checked by humans. The same superpolynomial bound exceeds m^2/2 + 1 for large m; the small m stay open (no explicit m0 in either paper). See EXTERNAL.md.
+
+- (no entry of ours)
+
 ## L-gct-077 (checked) Reduction of L-gct-037 to the level-space problem: a bound G on spaces where perm(J_n + t) = n! gives border dc(perm_(n+1)) >= (n+1)^2 - 2(n+1) + 1 - G
+
+> External: moot as a route if either claim holds; a checked reduction, unchanged; neither claim checked by humans. See EXTERNAL.md.
 
 - [X-gct-102](entries/X-gct-102.md) [reduction, paper-proof] Small cases through L-gct-077: LS(6) <= 10 is the first finite statement that gives a new border bound
 
@@ -73,9 +89,13 @@ For each fleet node that an entry of the extension attaches to: the node's statu
 
 ## L-gct-103 (conjecture) OPEN: divisibility hypothesis DIV(3, 27/25): a short signed sum of 3th powers of T-sparse integer polynomials has at most T^(27/25) roots at -1..-N
 
+> External: moot as a route if either claim holds (the algebraic route to permanent lower bounds); the statement stays open; neither claim checked by humans. See EXTERNAL.md.
+
 - [X-gct-008](entries/X-gct-008.md) [bound, sketch] DIV can only fail through huge coefficients (a Mahler-measure bound)
 
 ## L-gct-104 (conjecture) OPEN: divisibility hypothesis DIV(4, 6/5): a short signed sum of 4th powers of T-sparse integer polynomials has at most T^(6/5) roots at -1..-N
+
+> External: moot as a route if either claim holds (the algebraic route to permanent lower bounds); the statement stays open; neither claim checked by humans. See EXTERNAL.md.
 
 - [X-gct-008](entries/X-gct-008.md) [bound, sketch] DIV can only fail through huge coefficients (a Mahler-measure bound)
 
