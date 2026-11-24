@@ -159,6 +159,10 @@ External results that bear on these nodes: two claimed, unrefereed proofs of VP 
 
 - [X-meta-003](entries/X-meta-003.md) [special-case, paper-proof] AND count tau(G) for the maximal-independent-set partial function, on every graph emptied by deleting leaves with their neighbours
 
+## L-meta-2239 (conjecture) Plane of order q, read-1 AND/OR circuits of fan-in exactly two for incidence: least size exactly N(q + 2) - 1, the cover term included
+
+- [X-meta-006](entries/X-meta-006.md) [special-case, paper-proof] L-meta-2239 holds: on a plane of order q, read-1 circuits for incidence need exactly N(q + 2) - 1 gates
+
 ## L-meta-270 (checked) AND/OR fan-in-two circuits with outputs for sets meeting pairwise in at most one index need the sum over i of min(k, |S_i| - 1) gates
 
 - [X-meta-104](entries/X-meta-104.md) [construction, paper-proof] The promise bound of L-meta-270 is tight at k = 1: O(q^2) AND/OR gates for all line-ORs on inputs of weight at most 1
