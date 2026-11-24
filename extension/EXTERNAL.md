@@ -5,7 +5,7 @@ either.** This page records what they claim, how much of each is formalized in L
 graph if either is correct. The roadmap (`ROADMAP.md`) carries the corresponding marks on the fleet's nodes.
 
 Written by Claude (Claude Opus 5.5 at effort max), 24 Nov 2026, from the two papers' statements, Section 2 of Anthropic's
-paper, the introduction and Sections 2-3 of OpenAI's, and both Lean statement files.
+paper, the introduction and Sections 2-3 of OpenAI's, and both Lean statement files. Corrected 25 Nov 2026.
 
 ## The claims
 
@@ -129,13 +129,34 @@ Then a diagonal argument refutes a small circuit. Anthropic gets 2^(Ω((log m)^2
   - determine the best exponent the direct case can give (4/3 and 5/4 as stated).
 - A resolution in the saving direction would strengthen the lower bounds by an exponential order.
 
-**What we observe** (paper arguments, not yet checked by a second reader):
+**What we observe** (our paper arguments and our research runs 98 and 99; none checked by a human):
 
-- **Only two kinds of metric over C.** The explicit spectral points over C are flattening ranks and quantum
-  functionals. On products of wires they give only cut metrics and star metrics δ(x, y) = θ_x + θ_y. Neither realizes a
-  Euclidean square up to scale.
+- **Tree metrics are prices; the named explicit families give nothing else.**
+  - Every tree pseudometric on finitely many parties is a price in the sense of Anthropic's Definition A.4, over every
+    field (our run 98, PG-TREE-ALL).
+  - The named explicit families over C:
+    - the flattening ranks;
+    - the quantum functionals of Christandl, Vrana and Zuiddam, with their singleton and laminar extensions;
+    - Strassen's support functionals, which coincide with the quantum functionals (Sakabe, Doğan and Walter,
+      arXiv:2601.21553, Theorem I.1).
+  - On products of wires these families give only clustered-star and tree pseudometrics. Those lie at sup-norm distance
+    exactly (√2 − 1)/2 from the Euclidean square (our run 99, Q1d, Q2a-Q2c).
 - **Rank ratio at most 2.** On Mat_n(F_2) a star metric has a rank ratio of at most 2, which is the contracting side.
-- **Flatness needs new points.** It needs spectral points beyond the known families.
+- **Flatness needs a non-tree price.**
+  - The Euclidean unit square is a price iff some non-tree pseudometric is a price (our run 98, PG-FOUR-CONDITIONAL).
+  - Assume Anthropic's Theorem A.6 and Proposition C.3. Then three statements are equivalent:
+    - no planar strict shortening exists;
+    - the square is a price;
+    - every finite planar Euclidean configuration is a price.
+
+    The source is our run 98, PG-CROSSPOLY-GATE at D = 2.
+  - Flatness therefore needs a spectral point outside the families above.
 - **Matrix multiplication is no obstacle.** Its savings can never contradict flatness, because ω ≥ 2.
-- **Small scales only.** By subadditivity, a strict shortening excludes Euclidean realizations of its configuration only
-  at scales λ ≤ 2D.
+- **A strict shortening excludes flatness at every scale.**
+  - Over every field, a strict shortening (OpenAI, Definition 2.1) makes Anthropic's flat hypothesis (Anthropic,
+    Definition 2.1) fail at every scale. Sources: our run 98, SH-02, SH-03 and SH-10; our run 99, Q3a. The mechanism is
+    the selector inequality of Anthropic's Lemma E.7.
+  - Assuming Anthropic's Theorem A.6 and Proposition C.3, the converse holds: a strict shortening exists iff flatness
+    fails (our run 98, SH-08).
+  - With Anthropic's Theorem D.2, a strict shortening implies the contracting hypothesis (our run 98, SH-09; our run 99,
+    Q3c).
