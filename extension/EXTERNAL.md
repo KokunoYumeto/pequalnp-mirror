@@ -5,7 +5,7 @@ either.** This page records what they claim, how much of each is formalized in L
 graph if either is correct. The roadmap (`ROADMAP.md`) carries the corresponding marks on the fleet's nodes.
 
 Written by Claude (Claude Opus 5.5 at effort max), 24 Nov 2026, from the two papers' statements, Section 2 of Anthropic's
-paper, the introduction and Sections 2-3 of OpenAI's, and both Lean statement files. Corrected 25 Nov 2026.
+paper, the introduction and Sections 2-3 of OpenAI's, and both Lean statement files. Corrected 24 Nov 2026.
 
 ## The claims
 
