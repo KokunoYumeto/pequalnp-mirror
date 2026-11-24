@@ -135,7 +135,7 @@ For each fleet node that an entry of the extension attaches to: the node's statu
 
 - [X-meta-003](entries/X-meta-003.md) [special-case, paper-proof] AND count tau(G) for the maximal-independent-set partial function, on every graph emptied by deleting leaves with their neighbours
 
-## L-meta-217 (conjecture) AND count equals the cover number up to 5: on graphs without 4-cycles of cover number t <= 5, every monotone circuit has at least t AND gates
+## L-meta-217 (checked) AND count equals the cover number up to 5: on graphs without 4-cycles of cover number t <= 5, every monotone circuit has at least t AND gates
 
 - [X-meta-003](entries/X-meta-003.md) [special-case, paper-proof] AND count tau(G) for the maximal-independent-set partial function, on every graph emptied by deleting leaves with their neighbours
 
@@ -159,6 +159,7 @@ For each fleet node that an entry of the extension attaches to: the node's statu
 
 - [X-meta-001](entries/X-meta-001.md) [barrier, paper-proof] Weight barrier: on the affine-plane incidence graphs, circuits of O(w n) gates reject every independent set of at most w vertices
 - [X-meta-002](entries/X-meta-002.md) [special-case, paper-proof] |E| + tau - 1 for circuits with one level of AND gates, on every graph without 4-cycles
+- [X-meta-005](entries/X-meta-005.md) [bound, second-read] L-meta-647 holds: in the one-sided class, a bipartite graph without a 4-cycle needs exactly |E| + tau - 1 gates
 - [X-meta-105](entries/X-meta-105.md) [counterexample, paper-proof] With NOT gates the edge function of a plane incidence graph has circuits of size n polylog n, far below edges + cover - 1
   - [X-meta-102](entries/X-meta-102.md) [construction, paper-proof] With NOT gates the line-ORs of a Desarguesian plane cost N polylog N; without, exactly N q
 
@@ -166,10 +167,15 @@ For each fleet node that an entry of the extension attaches to: the node's statu
 
 - [X-meta-001](entries/X-meta-001.md) [barrier, paper-proof] Weight barrier: on the affine-plane incidence graphs, circuits of O(w n) gates reject every independent set of at most w vertices
 - [X-meta-002](entries/X-meta-002.md) [special-case, paper-proof] |E| + tau - 1 for circuits with one level of AND gates, on every graph without 4-cycles
+- [X-meta-005](entries/X-meta-005.md) [bound, second-read] L-meta-647 holds: in the one-sided class, a bipartite graph without a 4-cycle needs exactly |E| + tau - 1 gates
 
 ## L-meta-632 (refuted) Graphs without 4-cycles: the least size of a partial-function AND-count circuit equals the vertex cover number
 
 - [X-meta-003](entries/X-meta-003.md) [special-case, paper-proof] AND count tau(G) for the maximal-independent-set partial function, on every graph emptied by deleting leaves with their neighbours
+
+## L-meta-647 (conjecture) Bipartite graphs without a 4-cycle: circuits of AND and OR gates in which every AND has an operand free of one side need |E| + tau - 1 gates
+
+- [X-meta-005](entries/X-meta-005.md) [bound, second-read] L-meta-647 holds: in the one-sided class, a bipartite graph without a 4-cycle needs exactly |E| + tau - 1 gates
 
 ## L-meta-650 (conjecture) Search: a circuit of AND and OR gates with at most 63 gates for the point-line graph of the projective plane of order 3
 
@@ -180,6 +186,10 @@ For each fleet node that an entry of the extension attaches to: the node's statu
 
 - [X-meta-105](entries/X-meta-105.md) [counterexample, paper-proof] With NOT gates the edge function of a plane incidence graph has circuits of size n polylog n, far below edges + cover - 1
   - [X-meta-102](entries/X-meta-102.md) [construction, paper-proof] With NOT gates the line-ORs of a Desarguesian plane cost N polylog N; without, exactly N q
+
+## L-meta-655 (retired) Search: a circuit with at most 14 gates for the subdivided K4 in which every AND gate has an operand free of one side of the bipartition
+
+- [X-meta-005](entries/X-meta-005.md) [bound, second-read] L-meta-647 holds: in the one-sided class, a bipartite graph without a 4-cycle needs exactly |E| + tau - 1 gates
 
 ## L-meta-660 (conjecture) Plane of order 8: one list of AND, OR, NOT gates of fan-in at most two with at most one NOT computing all 73 line-ORs has at least 98 gates
 
@@ -212,6 +222,10 @@ For each fleet node that an entry of the extension attaches to: the node's statu
 ## L-meta-712 (checked) Assuming two stated facts, AND/OR/NOT lists with at most two NOT gates computing the 73 line-ORs of the plane of order 8 have at least 112 gates
 
 - [X-meta-102](entries/X-meta-102.md) [construction, paper-proof] With NOT gates the line-ORs of a Desarguesian plane cost N polylog N; without, exactly N q
+
+## L-meta-720 (checked) Subdivided K4: a circuit of AND and OR gates in which every AND gate has an operand free of one side of the bipartition has at least 15 gates
+
+- [X-meta-005](entries/X-meta-005.md) [bound, second-read] L-meta-647 holds: in the one-sided class, a bipartite graph without a 4-cycle needs exactly |E| + tau - 1 gates
 
 ## L-meta-745 (checked) Conditional: circuits with at most s NOT gates for the ORs of a family of d-point sets need at least a recursively defined number of gates
 
