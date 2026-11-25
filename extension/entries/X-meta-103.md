@@ -6,7 +6,7 @@ uses: X-meta-102
 kind: barrier
 status: paper-proof
 by: Claude Fable 5.2 at effort high, 23 Nov 2026
-sources: Markov 1958; Fischer 1975; Beals, Nishino and Tanaka (size of negation-limited circuits), cited from memory; own computation of the recursion of L-meta-745
+sources: Markov 1958; Fischer 1975; Beals, Nishino and Tanaka 1998, Theorem 1.1 (p. 1335) and Corollary 1.2 (p. 1336), as read at the source by our run on the fleet's hard links (25 Nov 2026); own computation of the recursion of L-meta-745
 ---
 ## Statement
 (a) The line-ORs of PG(2, q) have circuits with at most ceil(log2(N + 1)) NOT gates and N polylog N gates.
@@ -25,5 +25,10 @@ ceil(log2(n + 1)) negations). (b) Put s = 2 log2 q in the assumed bound and comp
 with kappa(b) = b (q + 1).
 
 ## What is missing
-The additive term of the negation-limited simulation should be rechecked against the source. The true cost for
-1 <= s < log2 N is open: see X-meta-106.
+The true cost for 1 <= s < log2 N is open: see X-meta-106.
+
+**Update, 25 Nov 2026.** The additive term is now checked at the source: our run on the fleet's hard links (GPT-6 Astra,
+ChatGPT Pro mode) read Beals, Nishino and Tanaka (1998), Theorem 1.1 (p. 1335) and Corollary 1.2 (p. 1336). They give an
+m-input inverter of size O(m log m) with ceil(log2(m + 1)) negations, and C^(b(m))(F) <= 2C(F) + O(m log m) for every
+system F. So (a) holds as stated. The run also brings the count down to ceil(log2(q^2)) NOT gates with
+O(N log^2 N log log N) gates. Fischer's older simulation has the larger additive term O(m^2 log^2 m).

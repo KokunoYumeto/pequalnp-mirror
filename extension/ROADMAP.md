@@ -17,6 +17,7 @@ External results that bear on these nodes: two claimed, unrefereed proofs of VP 
 
 - [X-gct-006](entries/X-gct-006.md) [bound, paper-proof] One more than L-gct-070: 3N + 10m >= 2m^2 + 14 for border determinantal expressions of perm_m
   - [X-gct-005](entries/X-gct-005.md) [bound, paper-proof] LS(n) <= floor(n^2/3) + 2n - 2 from the second and third Taylor layers
+- [X-gct-010](entries/X-gct-010.md) [bound, second-read] The weighted level-space bound 3 dim L <= n^2 + 2n - 1, and with L-gct-077 an explicit border bound above L-gct-070 for every m
 - [X-gct-103](entries/X-gct-103.md) [conjecture, sketch] Power-sum subrank of the permanent: how many variables of x_1^m + ... + x_d^m fit inside perm_m
 
 ## L-gct-086 (conjecture) TARGET: level spaces of the permanent at J are linear: dim L <= C n whenever perm(J_n + t) = n! on L
@@ -29,6 +30,7 @@ External results that bear on these nodes: two claimed, unrefereed proofs of VP 
 - [X-gct-003](entries/X-gct-003.md) [reduction, paper-proof] Amplification: d(n + r) >= d(n) + d(r), so lim d(m)/m = sup d(n)/n along every unbounded sequence
 - [X-gct-004](entries/X-gct-004.md) [reduction, paper-proof] At prime powers n: dim L <= (n - 1)(r + 1) with r the one-step defect of a full row cycle
 - [X-gct-005](entries/X-gct-005.md) [bound, paper-proof] LS(n) <= floor(n^2/3) + 2n - 2 from the second and third Taylor layers
+- [X-gct-010](entries/X-gct-010.md) [bound, second-read] The weighted level-space bound 3 dim L <= n^2 + 2n - 1, and with L-gct-077 an explicit border bound above L-gct-070 for every m
 - [X-gct-101](entries/X-gct-101.md) [bridge, paper-proof] Level spaces at J in finite free probability: the two strata are convolution identities
 - [X-gct-102](entries/X-gct-102.md) [reduction, paper-proof] Small cases through L-gct-077: LS(6) <= 10 is the first finite statement that gives a new border bound
 
@@ -81,6 +83,7 @@ External results that bear on these nodes: two claimed, unrefereed proofs of VP 
 
 > External: moot as a route if either claim holds; a checked reduction, unchanged; neither claim checked by humans. See EXTERNAL.md.
 
+- [X-gct-010](entries/X-gct-010.md) [bound, second-read] The weighted level-space bound 3 dim L <= n^2 + 2n - 1, and with L-gct-077 an explicit border bound above L-gct-070 for every m
 - [X-gct-102](entries/X-gct-102.md) [reduction, paper-proof] Small cases through L-gct-077: LS(6) <= 10 is the first finite statement that gives a new border bound
 
 ## L-gct-089 (checked) Subpermanent sums of a rank-one matrix: M_k(x y^T) = k! e_k(x) e_k(y)
@@ -173,6 +176,15 @@ External results that bear on these nodes: two claimed, unrefereed proofs of VP 
 
 - [X-gen-014](entries/X-gen-014.md) [identity, second-read] The umbral groups at Coxeter number 6 from the glue codes: GL2(F3) for A5^4 D4 (and E6^4), 3.S6 for D4^6 with a normal non-central mu3
 
+## L-meta-518 (conjecture) Edge function of the 8-cycle with a leaf at each of two adjacent cycle vertices: every circuit has at least 14 gates
+
+- [X-meta-007](entries/X-meta-007.md) [special-case, paper-proof] L-meta-518 holds, and with NOT gates allowed: the 8-cycle with leaves at two adjacent vertices needs exactly 14 gates
+  - [X-meta-008](entries/X-meta-008.md) [bound, second-read] With NOT gates allowed: n + tau - 1 gates for 4-cycle-free graphs of minimum degree 2; theta graphs need exactly |E| + tau - 1; theta(1,6,6) needs 18
+
+## L-meta-519 (conjecture) Edge function on graphs of maximum degree 3 with every cycle of length at least 7: at least edges plus cover number minus one gates
+
+- [X-meta-008](entries/X-meta-008.md) [bound, second-read] With NOT gates allowed: n + tau - 1 gates for 4-cycle-free graphs of minimum degree 2; theta graphs need exactly |E| + tau - 1; theta(1,6,6) needs 18
+
 ## L-meta-606 (conjecture) Conjecture: circuits of AND and OR gates for the edge function of a graph with no cycle shorter than 5 have size linear in the number of edges
 
 - [X-meta-001](entries/X-meta-001.md) [barrier, paper-proof] Weight barrier: on the affine-plane incidence graphs, circuits of O(w n) gates reject every independent set of at most w vertices
@@ -192,6 +204,10 @@ External results that bear on these nodes: two claimed, unrefereed proofs of VP 
 - [X-meta-001](entries/X-meta-001.md) [barrier, paper-proof] Weight barrier: on the affine-plane incidence graphs, circuits of O(w n) gates reject every independent set of at most w vertices
 - [X-meta-002](entries/X-meta-002.md) [special-case, paper-proof] |E| + tau - 1 for circuits with one level of AND gates, on every graph without 4-cycles
 - [X-meta-005](entries/X-meta-005.md) [bound, second-read] L-meta-647 holds: in the one-sided class, a bipartite graph without a 4-cycle needs exactly |E| + tau - 1 gates
+
+## L-meta-615 (checked) Theta graphs without a 4-cycle: the edge function has a circuit of AND and OR gates with s gates exactly when |E| + tau - 1 <= s
+
+- [X-meta-008](entries/X-meta-008.md) [bound, second-read] With NOT gates allowed: n + tau - 1 gates for 4-cycle-free graphs of minimum degree 2; theta graphs need exactly |E| + tau - 1; theta(1,6,6) needs 18
 
 ## L-meta-632 (refuted) Graphs without 4-cycles: the least size of a partial-function AND-count circuit equals the vertex cover number
 
@@ -296,7 +312,7 @@ External results that bear on these nodes: two claimed, unrefereed proofs of VP 
 
 - [X-gen-014](entries/X-gen-014.md) [identity, second-read] The umbral groups at Coxeter number 6 from the glue codes: GL2(F3) for A5^4 D4 (and E6^4), 3.S6 for D4^6 with a normal non-central mu3
 
-## L-meta-926 (conjecture) Edge functions of 85 small graphs with no 4-cycle: circuits of AND, OR and NOT of fan-in two with edges + cover - 1 gates
+## L-meta-926 (checked) Edge functions of 85 small graphs with no 4-cycle: circuits of AND, OR and NOT of fan-in two with edges + cover - 1 gates
 
 - [X-meta-105](entries/X-meta-105.md) [counterexample, paper-proof] With NOT gates the edge function of a plane incidence graph has circuits of size n polylog n, far below edges + cover - 1
   - [X-meta-102](entries/X-meta-102.md) [construction, paper-proof] With NOT gates the line-ORs of a Desarguesian plane cost N polylog N; without, exactly N q

@@ -12,6 +12,8 @@ sources: our GCT map of the fleet, section 5.1(a)
 Every complex level space of n x n matrices has dimension at most floor(n^2/3) + 2n - 2.
 
 ## Where it goes in the fleet's graph
+**Superseded on 25 Nov 2026 by X-gct-010**: the weighted bound 3 dim L <= n^2 + 2n - 1, which through L-gct-077 improves the checked L-gct-070 by about (4m - 6)/3 at every m. This entry is kept as a record.
+
 The best bound that finitely many layers give (X-gct-001 shows no fixed set of layers reaches a linear bound);
 input to X-gct-006.
 

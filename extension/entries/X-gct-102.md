@@ -15,6 +15,8 @@ perm_6: all below m^2/2 (8, 12.5, 18). G(6) <= 10 gives N >= 26 for perm_7, abov
 the route gives n^2 - 2n + 3, above m^2/2 from perm_7 on.
 
 ## Where it goes in the fleet's graph
+**Update, 25 Nov 2026.** The weighted bound of X-gct-010 (LS(6) <= 15) already gives a new border bound at every m through L-gct-077: 21 at m = 7, against 13 from L-gct-070. LS(6) <= 10 would raise m = 7 to 26. So LS(6) <= 10 is no longer the first new border bound, but it stays the next one.
+
 Names the smallest finite level-space statement worth a search or a certificate.
 
 ## Argument

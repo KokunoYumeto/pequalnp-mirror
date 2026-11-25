@@ -14,6 +14,8 @@ X-gct-005 gives 3N + 10m >= 2m^2 + 14 for every border determinantal expression 
 L-gct-070 for m >= 3.
 
 ## Where it goes in the fleet's graph
+**Superseded on 25 Nov 2026 by X-gct-010**: the weighted bound 3 dim L <= n^2 + 2n - 1, which through L-gct-077 improves the checked L-gct-070 by about (4m - 6)/3 at every m. This entry is kept as a record.
+
 The cheapest formal improvement in the border-dc cluster: all inputs (L-gct-061, 092, 105, 106, 077) are
 checked in Lean; only the assembly is missing. One unit, by the mechanism of L-gct-061/062; not a real gain
 asymptotically.
